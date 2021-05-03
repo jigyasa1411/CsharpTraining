@@ -13,8 +13,9 @@ namespace question6
             Console.WriteLine("h: for history books");
             Console.WriteLine("e: for English books");
 
-            Console.WriteLine("Enter your option:");
-            string option = Console.ReadLine();
+            label:
+                Console.WriteLine("Enter your option:");
+                string option = Console.ReadLine();
 
             switch(option)
             {
@@ -36,7 +37,7 @@ namespace question6
 
                 default:
                     Console.WriteLine("Please choose correct option");
-                    break;
+                    goto label; // Prompting user back to enter a legitimate option by going back to label statement above.
             }
 
         }
