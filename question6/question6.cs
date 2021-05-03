@@ -13,6 +13,7 @@ namespace question6
             Console.WriteLine("h: for history books");
             Console.WriteLine("e: for English books");
 
+            Console.WriteLine("Enter your option:");
             string option = Console.ReadLine();
 
             switch(option)
