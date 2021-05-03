@@ -1,0 +1,13 @@
+C:\Users\satyam\Desktop\CsharpTraining\question6\obj\Debug\netcoreapp3.1\question6.csprojAssemblyReference.cache
+C:\Users\satyam\Desktop\CsharpTraining\question6\obj\Debug\netcoreapp3.1\question6.AssemblyInfoInputs.cache
+C:\Users\satyam\Desktop\CsharpTraining\question6\obj\Debug\netcoreapp3.1\question6.AssemblyInfo.cs
+C:\Users\satyam\Desktop\CsharpTraining\question6\obj\Debug\netcoreapp3.1\question6.csproj.CoreCompileInputs.cache
+C:\Users\satyam\Desktop\CsharpTraining\question6\bin\Debug\netcoreapp3.1\question6.exe
+C:\Users\satyam\Desktop\CsharpTraining\question6\bin\Debug\netcoreapp3.1\question6.deps.json
+C:\Users\satyam\Desktop\CsharpTraining\question6\bin\Debug\netcoreapp3.1\question6.runtimeconfig.json
+C:\Users\satyam\Desktop\CsharpTraining\question6\bin\Debug\netcoreapp3.1\question6.runtimeconfig.dev.json
+C:\Users\satyam\Desktop\CsharpTraining\question6\bin\Debug\netcoreapp3.1\question6.dll
+C:\Users\satyam\Desktop\CsharpTraining\question6\bin\Debug\netcoreapp3.1\question6.pdb
+C:\Users\satyam\Desktop\CsharpTraining\question6\obj\Debug\netcoreapp3.1\question6.dll
+C:\Users\satyam\Desktop\CsharpTraining\question6\obj\Debug\netcoreapp3.1\question6.pdb
+C:\Users\satyam\Desktop\CsharpTraining\question6\obj\Debug\netcoreapp3.1\question6.genruntimeconfig.cache
