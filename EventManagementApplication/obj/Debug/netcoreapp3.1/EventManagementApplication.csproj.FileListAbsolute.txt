@@ -1,0 +1,13 @@
+C:\Users\satyam\Desktop\CsharpTraining\EventManagementApplication\bin\Debug\netcoreapp3.1\EventManagementApplication.exe
+C:\Users\satyam\Desktop\CsharpTraining\EventManagementApplication\bin\Debug\netcoreapp3.1\EventManagementApplication.deps.json
+C:\Users\satyam\Desktop\CsharpTraining\EventManagementApplication\bin\Debug\netcoreapp3.1\EventManagementApplication.runtimeconfig.json
+C:\Users\satyam\Desktop\CsharpTraining\EventManagementApplication\bin\Debug\netcoreapp3.1\EventManagementApplication.runtimeconfig.dev.json
+C:\Users\satyam\Desktop\CsharpTraining\EventManagementApplication\bin\Debug\netcoreapp3.1\EventManagementApplication.dll
+C:\Users\satyam\Desktop\CsharpTraining\EventManagementApplication\bin\Debug\netcoreapp3.1\EventManagementApplication.pdb
+C:\Users\satyam\Desktop\CsharpTraining\EventManagementApplication\obj\Debug\netcoreapp3.1\EventManagementApplication.csprojAssemblyReference.cache
+C:\Users\satyam\Desktop\CsharpTraining\EventManagementApplication\obj\Debug\netcoreapp3.1\EventManagementApplication.AssemblyInfoInputs.cache
+C:\Users\satyam\Desktop\CsharpTraining\EventManagementApplication\obj\Debug\netcoreapp3.1\EventManagementApplication.AssemblyInfo.cs
+C:\Users\satyam\Desktop\CsharpTraining\EventManagementApplication\obj\Debug\netcoreapp3.1\EventManagementApplication.csproj.CoreCompileInputs.cache
+C:\Users\satyam\Desktop\CsharpTraining\EventManagementApplication\obj\Debug\netcoreapp3.1\EventManagementApplication.dll
+C:\Users\satyam\Desktop\CsharpTraining\EventManagementApplication\obj\Debug\netcoreapp3.1\EventManagementApplication.pdb
+C:\Users\satyam\Desktop\CsharpTraining\EventManagementApplication\obj\Debug\netcoreapp3.1\EventManagementApplication.genruntimeconfig.cache
