@@ -297,7 +297,7 @@ namespace EventManagementApplication
 
 
 
-
+//MAIN CLASS
 namespace EventManagementApplication
 {
     class Program
