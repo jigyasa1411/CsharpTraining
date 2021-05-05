@@ -9,7 +9,7 @@ namespace question5
             // program for Tax calculation
             double tax = 0;
             Console.WriteLine("Enter the amount:");
-            int amount = Convert.ToInt32(Console.ReadLine());
+            double amount = Convert.ToDouble(Console.ReadLine());
 
             if(amount<10000)
             {
