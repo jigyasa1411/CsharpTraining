@@ -7,7 +7,7 @@ namespace question5
         static void Main(string[] args)
         {
             // program for Tax calculation
-            double tax = 0;
+            double tax = 0; //Initially value of tax be zero.
             Console.WriteLine("Enter the amount:");
             double amount = Convert.ToDouble(Console.ReadLine());
 
