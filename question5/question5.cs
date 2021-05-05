@@ -9,9 +9,9 @@ namespace question5
             // program for Tax calculation
             double tax = 0; //Initially value of tax be zero.
             Console.WriteLine("Enter the amount:");
-            double amount = Convert.ToDouble(Console.ReadLine());
+            double amount = Convert.ToDouble(Console.ReadLine()); //Amount is changed into double data type.
 
-            if(amount<10000)
+            if(amount<10000) 
             {
                 tax = (0.05)*amount;
                 Console.WriteLine("The tax for {0} amount is 5% of amount which is: {1}",amount,tax);

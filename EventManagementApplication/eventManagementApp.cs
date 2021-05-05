@@ -4,8 +4,8 @@ namespace EventManagementApplication
 {
     class Event //PARENT CLASS
     {
-        public string eventName; // specifies the name of event i.e. birthday party etc.
-        public string eventType; // Specifies whether an event is a day or evening event.
+        private string eventName; // specifies the name of event i.e. birthday party etc.
+        private string eventType; // Specifies whether an event is a day or evening event.
 
         public int numOfguest; // Specifies the expected number of attendees.
 
@@ -17,25 +17,82 @@ namespace EventManagementApplication
 
         public string decoration; //specifies the kind decoration.
 
+
+        // Setting up the name of the event using getter setter methods.
+        public string EventName
+        {
+            get { return eventName;}
+
+            set { eventName = value;}
+        }
+
+        // Setting up the name of the event using getter setter methods.
+        public string EventType
+        {
+           get { return eventType;}
+
+            set { eventType = value;}
+        }
+
         
     }
 }
 
 
 // BIRTHDAY EVENT CHILD CLASS
+
 namespace EventManagementApplication
 {
 
     class Birthday : Event
     {
-        public void setEventName(string en)
+
+        
+        // Method to set event name.
+        public string setEventName()
         {
-            eventName = en;  //Inhereting atttribute(eventName from base class)
+            EventName = "Birthday";
+            return EventName;
         }
         
-        public void setEventType(string et)
+        // Method to set event type.
+        public string setEventType()
         {
-            eventType = et;
+            eventSelection:
+                System.Console.WriteLine("Enter event type: ");
+                System.Console.WriteLine("Enter 1 for Day Event: ");
+                System.Console.WriteLine("Enter 2 for evening event: ");
+                System.Console.WriteLine("Enter 3 for Night Event: ");
+                System.Console.WriteLine("Enter the choice: ");
+                int et = System.Convert.ToInt32(System.Console.ReadLine());
+            
+            if(et == 1)
+            {
+                EventType = "Day Event";
+                return EventType;
+            }
+                
+            
+            else if(et == 2)
+            {
+                EventType = "Evening Event";
+                return EventType;
+            }
+
+            else if(et == 3)
+            {
+                EventType = "Night Event";
+                return EventType;
+            }
+
+            else
+            {
+                System.Console.WriteLine("Please enter choice from available option.");
+                goto eventSelection; // Prompt user to make a valid choice again.
+            }
+
+
+
         }
 
         public void setNumOfguest(int ng)
@@ -90,7 +147,7 @@ namespace EventManagementApplication
 }
 
 
-
+/*
 // WEDDING EVENT CHILD CLASS
 namespace EventManagementApplication
 {
@@ -295,7 +352,7 @@ namespace EventManagementApplication
     }
 }
 
-
+*/
 
 //MAIN CLASS
 namespace EventManagementApplication
@@ -327,21 +384,23 @@ namespace EventManagementApplication
             if(selection == 1) // BIRTHDAY IS THE EVENT
             {
                 Birthday obj1 = new Birthday();
-                Console.WriteLine("Enter the name of event: "); //Getting Name of the event
-                string name = Console.ReadLine();
-                obj1.setEventName(name); // Setting the name of the event
+
+                string nameOfEvent = obj1.setEventName();
+                //Console.WriteLine("Enter the name of event: "); //Getting Name of the event
+                //string name = Console.ReadLine();
+                //obj1.setEventName("Birthday"); // Setting the name of the event
             
-                Console.WriteLine("\n");
+                /*Console.WriteLine("\n");
                 Console.WriteLine("Enter the type of the party: "); //Getting Type of event.
                 string ptype = Console.ReadLine();
-                obj1.setEventType(ptype);
+                obj1.setEventType(ptype);*/
 
 
-                Console.WriteLine("\n");
+               /* Console.WriteLine("\n");
                 Console.WriteLine("Enter the estimated number of guests: "); // Getting estimated number of Guests.
                 int nguest = Convert.ToInt32(Console.ReadLine());
-                obj1.setNumOfguest(nguest);
-
+                obj1.setNumOfguest(nguest);*/
+                /*
                 Console.WriteLine("\n");
                 Console.WriteLine("Choose one of the following packages: ");
                 Console.WriteLine("Press 1 for Premium (500 per person)");
@@ -369,16 +428,16 @@ namespace EventManagementApplication
                 obj1.setDecoration(deco);
 
 
-                int expenditure = obj1.getExpense(); //Calculating total expense of the event.
+                int expenditure = obj1.getExpense(); //Calculating total expense of the event.*/
 
                 // Displaying all the details regarding the event
                 Console.WriteLine("-------------------------------------------------------------------------------------------------");
                 Console.WriteLine("*************************************************************************************************");
                 Console.WriteLine("-------------------------------------------------------------------------------------------------");
                 Console.WriteLine("Here's the details of the event you are planning for:\n");
-                Console.WriteLine("Party Name:"+ obj1.eventName); //Inhereting attribute names from parent class
-                Console.WriteLine("Party Type: "+ obj1.eventType);
-                Console.WriteLine("Expected number of guests: "+ obj1.numOfguest);
+                Console.WriteLine("Party Name:"+ nameOfEvent); 
+                Console.WriteLine("Party Type: "+ obj1.setEventType());}
+             /*   Console.WriteLine("Expected number of guests: "+ obj1.numOfguest);
                 Console.WriteLine("Package Selected : "+ obj1.package);
                 Console.WriteLine("Selected Venue: "+obj1.venue);
                 Console.WriteLine("Selected decoration Theme: "+ obj1.decoration);
@@ -388,9 +447,9 @@ namespace EventManagementApplication
                 Console.WriteLine("-------------------------------------------------------------------------------------------------");
                 Console.WriteLine("*************************************************************************************************");
                 Console.WriteLine("-------------------------------------------------------------------------------------------------");
-            }
+            }*/
 
-            else if(selection == 2)  //WEDDING IS THE EVENT
+         /*   else if(selection == 2)  //WEDDING IS THE EVENT
             {
                 Wedding obj1 = new Wedding();
                 Console.WriteLine("Enter the name of event: "); //Getting Name of the event
@@ -586,7 +645,7 @@ namespace EventManagementApplication
                 Console.WriteLine("-------------------------------------------------------------------------------------------------");
                 Console.WriteLine("*************************************************************************************************");
                 Console.WriteLine("-------------------------------------------------------------------------------------------------");
-            }
+            }*/
             
             else
             {

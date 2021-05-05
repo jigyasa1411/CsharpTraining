@@ -21,7 +21,7 @@ namespace question1
             Console.WriteLine("Enter your House number:");
             int houseNo =Convert.ToInt32(Console.ReadLine()); //Taking user's house no.
 
-//test
+
             // Printing the details
             Console.WriteLine("_________________________________________________________________________");
             Console.WriteLine("Name: "+ name);
