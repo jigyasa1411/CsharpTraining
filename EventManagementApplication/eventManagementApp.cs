@@ -51,7 +51,7 @@ namespace EventManagementApplication
 
             set{ package = value;}
         }
-
+        
         // Setting up name of the venue.
         public string Venue
         {
@@ -956,7 +956,7 @@ namespace EventManagementApplication
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
             Console.WriteLine("*************************************************************************************************");
             
-            Console.WriteLine("---------------------------ABC EVENT MANAGEMENT SERVICES PVT. LTD.--------------------------------");
+            Console.WriteLine("---------------------------JIGYASA EVENT MANAGEMENT SERVICES PVT. LTD.--------------------------------");
             Console.WriteLine("---------------------We are here to take your hassle of managing an event-------------------------");
 
             Console.WriteLine("*************************************************************************************************");
