@@ -18,12 +18,12 @@ namespace EventManagementApplication
 
         public int expense; // specifies the expense to be incurred for the party.
 
-//testtest
+
         // Setting up the name of the event.
         public string EventName
         {
             get { return eventName;}
-//abc
+
             set { eventName = value;}
         }
 
