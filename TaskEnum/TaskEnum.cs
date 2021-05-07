@@ -29,7 +29,7 @@ namespace TaskEnum
             // Checking if input is empty or not.
             if(string.IsNullOrEmpty(alphabet))
             {
-                Console.WriteLine("This field can't be empty or null. Enter valid input:");
+                Console.WriteLine("This field can not be empty or null. Enter valid input:");
                 goto choice;
             }
 
