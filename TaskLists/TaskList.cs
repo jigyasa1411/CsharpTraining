@@ -20,7 +20,7 @@ namespace TaskLists
             Console.WriteLine("How many elements do you want in your list: ");
             int size = Convert.ToInt32(Console.ReadLine());
 
-            int count; // specifies count of a particular element in the list.
+            int count; // specifies count of a particular element in the given list.
 
             if(choice == 1)
             {
