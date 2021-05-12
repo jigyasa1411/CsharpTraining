@@ -10,7 +10,7 @@ namespace question10
             Console.WriteLine("Enter the size of the array: ");
             int size = Convert.ToInt32(Console.ReadLine());
             int[] a = new int[size]; 
-            int count = 0;
+            int count = 1;
             
 
             Console.WriteLine("Enter the elements in the array: ");
