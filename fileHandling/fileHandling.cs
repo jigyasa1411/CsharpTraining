@@ -46,10 +46,11 @@ class fileHandling
             Console.WriteLine("\n\nThe content of the last {0} lines of the file {1} is : \n",linesToDisplay,nameOfFile);
 			if (File.Exists(nameOfFile))
 			{
+                Console.WriteLine("The last {0} lines are: ",linesToDisplay);
 				for(int i=numOfLines-linesToDisplay;i<numOfLines;i++)
 				{
 				    string[] lines = File.ReadAllLines(nameOfFile);
-				    Console.Write("The last {0} line(s) is/are : {1} \n",displayLines,lines[i]);
+				    Console.WriteLine(lines[i]);
 				    displayLines--;
 				}
 			}
