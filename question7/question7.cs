@@ -8,11 +8,11 @@ namespace question7
         {
             label:
                 Console.WriteLine("Enter the number:");
-                int num = Convert.ToInt32(Console.ReadLine());
+                double num = Convert.ToDouble(Console.ReadLine());
             
 
-            int power = 1;
-            int n = num;
+            double power = 1;
+            double n = num;
             while(n>0)
             {
                 power*=num;
