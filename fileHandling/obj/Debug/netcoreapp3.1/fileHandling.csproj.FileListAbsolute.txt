@@ -1,0 +1,13 @@
+C:\Users\satyam\Desktop\CsharpTraining\fileHandling\bin\Debug\netcoreapp3.1\fileHandling.exe
+C:\Users\satyam\Desktop\CsharpTraining\fileHandling\bin\Debug\netcoreapp3.1\fileHandling.deps.json
+C:\Users\satyam\Desktop\CsharpTraining\fileHandling\bin\Debug\netcoreapp3.1\fileHandling.runtimeconfig.json
+C:\Users\satyam\Desktop\CsharpTraining\fileHandling\bin\Debug\netcoreapp3.1\fileHandling.runtimeconfig.dev.json
+C:\Users\satyam\Desktop\CsharpTraining\fileHandling\bin\Debug\netcoreapp3.1\fileHandling.dll
+C:\Users\satyam\Desktop\CsharpTraining\fileHandling\bin\Debug\netcoreapp3.1\fileHandling.pdb
+C:\Users\satyam\Desktop\CsharpTraining\fileHandling\obj\Debug\netcoreapp3.1\fileHandling.csprojAssemblyReference.cache
+C:\Users\satyam\Desktop\CsharpTraining\fileHandling\obj\Debug\netcoreapp3.1\fileHandling.AssemblyInfoInputs.cache
+C:\Users\satyam\Desktop\CsharpTraining\fileHandling\obj\Debug\netcoreapp3.1\fileHandling.AssemblyInfo.cs
+C:\Users\satyam\Desktop\CsharpTraining\fileHandling\obj\Debug\netcoreapp3.1\fileHandling.csproj.CoreCompileInputs.cache
+C:\Users\satyam\Desktop\CsharpTraining\fileHandling\obj\Debug\netcoreapp3.1\fileHandling.dll
+C:\Users\satyam\Desktop\CsharpTraining\fileHandling\obj\Debug\netcoreapp3.1\fileHandling.pdb
+C:\Users\satyam\Desktop\CsharpTraining\fileHandling\obj\Debug\netcoreapp3.1\fileHandling.genruntimeconfig.cache

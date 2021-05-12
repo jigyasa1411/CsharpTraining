@@ -90,28 +90,73 @@ namespace PayrollManagementSystem
     }
 
 
-    class AddEmployee : Employee  // Class to add a new employee and it is inhereting Employee class.
+    class AddEmployee : Employee, ItakeEntries  // Class to add a new employee and it is inhereting Employee class.
     {
-        public void addEmployeeDetails()
+        public void takeEntries()
         {
-            string[] ArrayLines = new string[7]; 
-            string[] empAttributes = {"Employee Code", "Employee's Name", "Employee's Contact","Employee's Age","Employee's Gender","Employee's desiignation","Daily Pay"};
-
-            for(int i=0; i<7;i++)
+            try
             {
-                Console.WriteLine("Enter {0}", empAttributes[i]);
-                ArrayLines[i] = Console.ReadLine();
+            Console.WriteLine("Enter employee code: ");
+            EmpCode = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter employee's name: ");
+            EmpName = Console.ReadLine();
+
+            Console.WriteLine("Enter employee's contact: ");
+            EmpContact = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter employee's age: ");
+            EmpAge = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Gender: ");
+            EmpGender = Console.ReadLine();
+
+            Console.WriteLine("Enter designation: ");
+            EmpDesignation = Console.ReadLine();
+
+            Console.WriteLine("Enter employee's daily pay: ");
+            EmpDailyPay = Convert.ToDouble(Console.ReadLine());
+            }
+
+            catch(Exception e)
+            {
+               
+               Console.WriteLine("Enter valid type of input. Check below exception message.");
+               Console.WriteLine("____________________________________________________________");
+               Console.WriteLine(e);
 
             }
-            System.IO.File.AppendAllLines("file.txt", ArrayLines); // We are using file handling to store employee information.
+
+
                 
+        }
+        public void addEmployeeDetails()
+        {
+            
+            takeEntries(); //calling take entries method for taking entries.
+            string[] ArrayLine = new string[7]; 
+            
+            ArrayLine[0] = EmpCode.ToString(); // Type casting non string types to string.
+            ArrayLine[1] = EmpName;
+            ArrayLine[2] = EmpContact.ToString();
+            ArrayLine[3] = EmpAge.ToString();
+            ArrayLine[4] = EmpGender;
+            ArrayLine[5] = EmpDesignation;
+            ArrayLine[6] = EmpDailyPay.ToString();
+
+            System.IO.File.AppendAllLines("file.txt", ArrayLine);
+
 
         }
     }
 
+    interface ItakeEntries
+    {
+        public void takeEntries();
+    }
 
 
-    class GeneratePayroll : Employee  // Class to generate payroll of an existing employee.
+    class GeneratePayroll : Employee, ItakeEntries  // Class to generate payroll of an existing employee.
     {
         
        public bool checkEmployee(string EmpCode)
@@ -145,11 +190,11 @@ namespace PayrollManagementSystem
         
             
        }
-       public void enterEmployeeDetails()  // Method which takes employee's details.
-       {
-           Console.WriteLine("______________________Taking Employee's Details to generate payroll_______________");
-           Console.WriteLine("<!NOTE> Only enter details of existing employees.");
 
+       public void takeEntries()
+       {
+           try
+           {
            Console.WriteLine("Enter employee code: ");
            EmpCode = Convert.ToInt32(Console.ReadLine());
 
@@ -167,9 +212,6 @@ namespace PayrollManagementSystem
            Console.WriteLine("Enter employee's full name: ");
            EmpName = Console.ReadLine();
 
-           Console.WriteLine("Enter employee's designation: ");
-           EmpDesignation = Console.ReadLine();
-
            Console.WriteLine("Enter employee's daily pay for full working day: ");
            EmpDailyPay = Convert.ToDouble(Console.ReadLine());
 
@@ -181,11 +223,27 @@ namespace PayrollManagementSystem
 
            Console.WriteLine("Is there any deductions to be reduced in employee's total pay, enter 0 in case of no deductions: ");
            Deductions = Convert.ToInt32(Console.ReadLine());
+           }
+           catch(Exception e)
+           {
+               
+               Console.WriteLine("Enter valid type of input. Check below exception message.");
+               Console.WriteLine("____________________________________________________________");
+               Console.WriteLine(e);
 
+           }
+
+       }
+       public void enterEmployeeDetails()  // Method which takes employee's details.
+       {
+           Console.WriteLine("______________________Taking Employee's Details to generate payroll_______________");
+           Console.WriteLine("<!NOTE> Only enter details of existing employees.");
+           takeEntries();
+           
+           
            Console.WriteLine("____________________________________________________________");
            Console.WriteLine("Employee Code: "+EmpCode);
            Console.WriteLine("Employee name: "+EmpName);
-           Console.WriteLine("Designation: "+EmpDesignation);
            Console.WriteLine("Daily Pay: "+EmpDailyPay);
            Console.WriteLine("Total working days: "+TotalWorkingDays);
            Console.WriteLine("Total Number of Leaves: "+NumOfLeaves);

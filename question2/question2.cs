@@ -6,7 +6,7 @@ namespace question2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter your name (In alphabetical format): ");
+            Console.WriteLine("Enter your name: ");
             string name = Console.ReadLine(); //Taking student's name as input
 
             Console.WriteLine("Enter your Roll Number (In numeric format):");
