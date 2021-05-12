@@ -96,6 +96,7 @@ namespace PayrollManagementSystem
         {
             try
             {
+        
             Console.WriteLine("Enter employee code: ");
             EmpCode = Convert.ToInt32(Console.ReadLine());
 
@@ -123,8 +124,9 @@ namespace PayrollManagementSystem
                
                Console.WriteLine("Enter valid type of input. Check below exception message.");
                Console.WriteLine("____________________________________________________________");
-               Console.WriteLine(e);
-
+               Console.WriteLine(e.Message.ToString());
+               Console.WriteLine("____________________________________________________________");
+              
             }
 
 
@@ -229,7 +231,8 @@ namespace PayrollManagementSystem
                
                Console.WriteLine("Enter valid type of input. Check below exception message.");
                Console.WriteLine("____________________________________________________________");
-               Console.WriteLine(e);
+               Console.WriteLine(e.Message.ToString());
+               Console.WriteLine("____________________________________________________________");
 
            }
 
